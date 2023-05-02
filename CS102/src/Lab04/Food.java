@@ -6,7 +6,6 @@ public class Food extends Product {
     public Food(float tax, float kgs) {
         super(tax);
         this.kgs = kgs;
-
     }
 
     public Food(String name) {
@@ -17,6 +16,10 @@ public class Food extends Product {
 
     public void setExpirationDate(String expirationDate) {
         this.expirationDate = expirationDate;
+    }
+
+    public double calculateTotalPrice() {
+        return this.kgs * this.getPrice() * (1 + this.getTax()) / 100;
     }
 
     public String toString() {

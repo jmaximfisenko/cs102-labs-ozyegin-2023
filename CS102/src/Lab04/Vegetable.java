@@ -1,9 +1,9 @@
 package Lab04;
 
-public class Vegetables extends Food{
+public class Vegetable extends Food{
     boolean organic;
 
-    public Vegetables(float tax, float kgs, boolean organic, String name) {
+    public Vegetable(float tax, float kgs, boolean organic, String name) {
         super(tax, kgs);
         setName(name);
         this.organic = organic;

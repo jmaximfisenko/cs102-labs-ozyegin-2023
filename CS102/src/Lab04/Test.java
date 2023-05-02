@@ -26,7 +26,7 @@ public class Test {
         tablet.setName("tablet");
         System.out.println("\n" + tablet);
 
-        Vegetables lemon = new Vegetables(15, 1, true, "lemon");
+        Vegetable lemon = new Vegetable(15, 1, true, "lemon");
         lemon.setPrice(5.15f);
         lemon.setExpirationDate("19.11.2018");
         System.out.println("\n" + lemon);

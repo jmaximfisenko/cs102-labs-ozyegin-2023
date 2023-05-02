@@ -14,6 +14,18 @@ public class Detergent extends Cleaning {
         this.liquid = liquid;
     }
 
+    public void setLts(float lts) {
+        this.lts = lts;
+    }
+
+    public void setLiquid(boolean liquid) {
+        this.liquid = liquid;
+    }
+
+    public double calculateTotalPrice() {
+        return this.lts * this.getPrice() * (1 + this.getTax())  / 100;
+    }
+
     public String toString() {
         return super.toString() + "\nLts: " + this.lts + "\nLiquid: " + this.liquid;
     }

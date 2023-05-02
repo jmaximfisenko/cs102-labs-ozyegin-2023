@@ -2,7 +2,7 @@ package Lab04;
 
 public class Product {
     private float tax;
-    private float price;
+    private double price;
     private String name = "no name";
 
     // constructors
@@ -25,7 +25,7 @@ public class Product {
         return this.tax;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return this.price;
     }
 
@@ -42,7 +42,7 @@ public class Product {
         this.name = name;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
